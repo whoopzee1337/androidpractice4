@@ -36,6 +36,7 @@ public class BlankFragment extends Fragment {
                 Bundle result = new Bundle();
                 FragmentTransaction fTrans = getFragmentManager().beginTransaction();
                 fTrans.replace(R.id.fragment1, new ListFragment());
+                fTrans.addToBackStack(null);
                 fTrans.commit();
             }
         });
@@ -47,6 +48,7 @@ public class BlankFragment extends Fragment {
                 Bundle result = new Bundle();
                 FragmentTransaction fTrans = getFragmentManager().beginTransaction();
                 fTrans.replace(R.id.fragment1, new RecyclerFragment());
+                fTrans.addToBackStack(null);
                 fTrans.commit();
             }
         });

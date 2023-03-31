@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color_1"
+    android:id = "@+id/fragment2"
     tools:context=".BlankFragment" >
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -15,24 +16,37 @@
             android:id="@+id/button2"
             android:layout_width="171dp"
             android:layout_height="69dp"
-            android:layout_marginBottom="232dp"
-            android:text="Recycler View"
-            android:backgroundTint="@color/color_2"
-            android:textColor="@color/color_3"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/beige"
             android:onClick="OnClick"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Recycler View"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button1" />
 
         <Button
             android:id="@+id/button1"
             android:layout_width="171dp"
             android:layout_height="69dp"
-            android:layout_marginTop="232dp"
-            android:text="List View"
-            android:backgroundTint="@color/color_2"
-            android:textColor="@color/color_3"
+            android:layout_marginTop="72dp"
+            android:backgroundTint="@color/beige"
             android:onClick="OnClick"
+            android:text="List View"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="156dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Application"
+            android:textColor="@color/black"
+            android:textSize="48sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
