@@ -8,7 +8,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment1"
-        android:name="com.example.prac4.BlankFragment"
+        android:name="com.example.prac4.StartFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout="@layout/fragment_blank" />
