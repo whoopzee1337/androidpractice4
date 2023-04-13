@@ -41,9 +41,10 @@ public class RecyclerFragment extends Fragment {
         RecyclerView recyclerView = (RecyclerView) rootView.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-        List<String> items = new ArrayList<>(45);
+
+        List<String> items = new ArrayList<>(200);
         for (int i = 1; i <= 200; i++) {
-            String item = Integer.toString(i);
+            String item = getArguments().getString("1");
             items.add(item);
         }
 
